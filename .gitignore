@@ -7,6 +7,7 @@
 /static/*
 *.sql
 .pgpass
+.idea
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
