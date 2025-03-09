@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "portfolio-rebalancer"
+version = "0.1.0"
+description = "Portfolio Rebalancer is a Python/QT (PySide6) GUI application that helps rebalance stock holdings by calculating adjusted monthly savings contributions based on a predefined target allocation."
+authors = ["PythBuster <pythbuster@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+pyside6 = "^6.8.2.1"
+pydantic-settings = "^2.8.1"
+qasync = "^0.27.1"
+matplotlib = "^3.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
