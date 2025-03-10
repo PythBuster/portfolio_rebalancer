@@ -4,6 +4,7 @@ import sys
 from PySide6.QtWidgets import QApplication
 from qasync import QEventLoop
 
+from src.db.db_manager import DBManager
 from src.gui.main_window import MainWindow
 
 if __name__ == "__main__":
@@ -15,7 +16,8 @@ if __name__ == "__main__":
     app_close_event = asyncio.Event()
     app.aboutToQuit.connect(app_close_event.set)
 
-    main_window = MainWindow()
+    db_manager = DBManager()
+    main_window = MainWindow(db_manager=db_manager)
     main_window.show()
 
     with event_loop:
